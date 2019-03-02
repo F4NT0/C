@@ -1,7 +1,7 @@
 #include<stdio.h> //biblioteca de entrada e saida
 
 
-//PARA COMPILAR O ARQUIVO
+//PARA COMPILAR O ARQUIVO NO TERMINAL
 // 1) gcc nomeprograma -o nomecompilavel
 // 2) ./nomecompilavel
 
