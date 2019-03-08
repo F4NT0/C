@@ -14,6 +14,12 @@
 #include <stdio.h> //biblioteca I/O
 #include <math.h> // biblioteca matematica
 
+// FUNÇÕES EM C
+
+double potencia(double b, double e){
+    return pow(b,e);
+}
+
 int main(){
     //variaveis
     int a,b,c,d;
@@ -77,5 +83,10 @@ int main(){
         printf("[%d]: %f\n",i, vetor[i]);
     }
 
+    // CHAMADA DE UMA FUNÇÃO
+    for(int i = 0 ; i <10 ; i++){
+        vetor[i] = potencia(2,i);
+        printf("Apos chamado uma funcao: [%d] = %f\n",i,vetor[i]);
+    }
     return 0;
 }
