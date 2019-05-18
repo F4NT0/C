@@ -9,19 +9,11 @@
 #include<string.h> //esta biblioteca se pode usar strings
 ```
 
-*  COMPILANDO UM ARQUIVO C NO TERMINAL
-    * Instale o gcc no terminal linux
-    * vá no diretorio onde o arquivo se encontra
-    * use o seguinte comando: `gcc nomeprograma.c -o nomeprograma`
-        * com o -o ele irá construir um executador que se chamara nomeprograma
-    * para rodar o executador escreva: `./nomeprograma`
-
-
 * Métodos uteis da biblioteca stdio.h
 
 ```C
 scanf() //entrada de dados no programa
-printf() //saida de dados do programa
+printf() //saida de dados do programa   
 
 //exemplos
 int i; //variavel do tipo inteiro
@@ -41,6 +33,7 @@ FORMATO|SAÍDA
 %s | array de chars(String)
 
 * VETORES E MATRIZES
+
 ```C
 //VETORES
 
