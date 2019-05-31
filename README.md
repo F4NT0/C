@@ -18,4 +18,4 @@ PR0GR4M4S_B4S1C0S| Serve para guardar Programas simples feitos
 
 ---
 
-<code></code><code></code><code></code><code></code><code></code><img src="1M4G3NS/c-logo.jpg" width="400">
+<img src="1M4G3NS/c-logo.jpg">
