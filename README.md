@@ -16,6 +16,13 @@ Nome Diretório|Para que serve
 4UL4S| Serve para guardar os estudos das Aulas e Cursos Feitos
 PR0GR4M4S_B4S1C0S| Serve para guardar Programas simples feitos
 
+
+## Como compilar programas em C
+
+Para criar um Executável: `gcc nomePrograma.c -o nomeExecutavel`
+
+Para Rodar um Executável: `./nomeExecutavel`
+
 ---
 
 <img src="1M4G3NS/c-logo.jpg">
