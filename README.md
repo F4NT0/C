@@ -1,5 +1,12 @@
 # Repositório de Programação com a Linguagem C
 
+**Informações**
+
+![](https://img.shields.io/github/last-commit/F4NT0/C.svg?style=plastic)
+![](https://img.shields.io/github/commit-activity/y/F4NT0/C.svg?label=Commits%20Feitos&style=plastic)
+![](https://img.shields.io/github/languages/top/F4NT0/C.svg?color=9cf&style=plastic)
+
+
 
 ## Diretórios neste Repositório:
 
