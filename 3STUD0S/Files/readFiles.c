@@ -1,13 +1,21 @@
 #include<stdio.h>
+#include<stdlib.h>
 
-//Lendo Arquivo
+//Arquivo para ler um arquivo em C
 
 int main(){
 
-    FILE *fp = open("Arquivo.txt", "r");
+    //Construção Básica de abertura de Arquivo
+    FILE* fp = fopen("Arquivo.txt", "r");
 
-    
+    if(fp == NULL){
+        printf("Erro! Arquivo não encontrado!\n");
+        exit(EXIT_FAILURE);
+    }
 
-
-
+    //Lendo Charactere por Charactere
+    char caractere;
+    while ((caractere = fgetc(fp)) != EOF){ //EOF(End Of File) sera quando nao tiver mais nada(e um int negativo) 
+        printf("char: %c\n", caractere);
+    }
 }
