@@ -1,5 +1,6 @@
 #include<stdio.sh>
 
+
 //construção de um Struct
 typedef struct{
     float p1;
@@ -15,9 +16,4 @@ int main(){
     a1.p1 = 10;
     a1.p2 = 7.5;
     a1.trab = 8;
-//
-//
-//
-//
-
 }
