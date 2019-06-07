@@ -19,3 +19,4 @@ Functions|:heavy_check_mark:
 Decisions_Structures|:heavy_check_mark:
 Repeticions_Structures|:heavy_check_mark:
 Structs|:heavy_check_mark:
+Files|:heavy_check_mark: 
