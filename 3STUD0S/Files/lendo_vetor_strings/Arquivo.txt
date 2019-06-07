@@ -1,0 +1,2 @@
+TESTE DE ARQUIVO
+Lendo Linha por Linha
