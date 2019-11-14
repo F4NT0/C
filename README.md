@@ -24,11 +24,10 @@ Vendo as páginas pelo Github:
 
 | Nome da Página | Link |
 | :--- | :--- |
-| Compilando C em Linux | \[Click\]\(compilando-c-em-linux\) |
-| Bases Numéricas | \[Click\]\(bases-numericas\) |
-| Usando Bases Numéricas | \[click\]\(usando-as-bases-numericas\) |
-| Vetores | \[click\]\(vetores\) |
-| Manipulação de Bits | \[click\]\(manipulacao-de-bits\) |
-| Modularização | \[click\]\(modularizacao\) |
-|  |  |
+| Compilando C em Linux | [Click](compilando-c-em-linux) |
+| Bases Numéricas |[Click](bases-numericas) |
+| Usando Bases Numéricas | [click](usando-as-bases-numericas) |
+| Vetores | [click](vetores) |
+| Manipulação de Bits | [click](manipulacao-de-bits) |
+| Modularização | [click](modularizacao) |
 
