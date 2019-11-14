@@ -2,9 +2,11 @@
 
 ## Como compilar arquivos em C
 
-`Sistema Linux`
+`Sistemas Linux que já utilizei:`
 
-[![](https://github.com/F4NT0/PR0GR4M1NG/raw/master/img/icon-linux.png)](https://github.com/F4NT0/PR0GR4M1NG/blob/master/img/icon-linux.png)
+![Ubuntu 16.04 e 18.04](.gitbook/assets/ubuntu-logo32.png)
+
+![Linux Mint 17.2 e 18.2 ](.gitbook/assets/iqlil.png)
 
 Baixe o programa **`gcc`**
 
@@ -37,6 +39,6 @@ Explicação:
 
 | Comando | Explicação |
 | :--- | :--- |
-| `./` | Para rodar o arquivo eecutável |
-| `nomeexecutavel` | nome do arquivo executavel que fizemos |
+| `./` | Para rodar o arquivo executável |
+| `nomeexecutavel` | nome do arquivo executável que fizemos |
 
