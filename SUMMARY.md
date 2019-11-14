@@ -1,4 +1,4 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Meus Estudos em C](README.md)
 
