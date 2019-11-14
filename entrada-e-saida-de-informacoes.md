@@ -67,5 +67,17 @@ printf("Teste: %2.2f ", valor);
 //Teste: 2.5
 ```
 
+### Lista de Modificadores
+
+* Aqui vem uma lista de Modificadores mais usados:
+
+| Tipo de Modificador | Símbolo |
+| :--- | :--- |
+| Saída de um Caractere Símples | %c |
+| Saída de um String | %s |
+| Saída de Inteiros com Sinal | %d |
+| Saída de Hexadecimal sem sinal | %x |
+| Saída de Float/Double \(tipo Real\) | %f |
+
 
 

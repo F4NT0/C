@@ -10,6 +10,8 @@ A seguir se encontram todas as páginas de informação deste Repositório
 
 {% page-ref page="compilando-c-em-linux.md" %}
 
+{% page-ref page="entrada-e-saida-de-informacoes.md" %}
+
 {% page-ref page="bases-numericas.md" %}
 
 {% page-ref page="usando-as-bases-numericas.md" %}
