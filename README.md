@@ -25,7 +25,7 @@ Vendo as páginas pelo Github:
 | Nome da Página | Link |
 | :--- | :--- |
 | Compilando C em Linux | [Click](compilando-c-em-linux.md) |
-| Bases Numéricas |[Click](bases-numericas.md) |
+| Bases Numéricas | [Click](bases-numericas.md) |
 | Usando Bases Numéricas | [Click](usando-as-bases-numericas.md) |
 | Vetores | [Click](vetores.md) |
 | Manipulação de Bits | [Click](manipulacao-de-bits.md) |
