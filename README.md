@@ -1,32 +1,39 @@
-# Repositório de Programação com a Linguagem C
+# Meus Estudos em C
 
-**Informações**
+Este Repositório serve para poder organizar toda a informação de toda a matéria de **Software Básico.**
 
-![](https://img.shields.io/github/last-commit/F4NT0/C.svg?style=plastic)
-![](https://img.shields.io/github/languages/top/F4NT0/C.svg?color=9cf&style=plastic)
+Todos os Arquivos encontrados aqui em **Markdown** \(.md\) são páginas ensinando do básico ao avançado de programação em C.
 
+Para ver essa Documentação de uma forma melhor, acesse a seguinte página: [https://f-4-n-t-o-technology.gitbook.io/programming-in-c/](https://f-4-n-t-o-technology.gitbook.io/programming-in-c/)
 
+A seguir se encontram todas as páginas de informação deste Repositório
 
-## Diretórios neste Repositório:
+{% page-ref page="compilando-c-em-linux.md" %}
 
-Nome Diretório|Para que serve
-|---|---|
-**1M4G3NS**| Serve para poder guardar todas as imagens necessárias
-**3STUD0S**| Serve para apresentar as Construções Básicas em C
-**4UL4S**| Serve para guardar os estudos das Aulas e Cursos Feitos
-**PR0GR4M4S_B4S1C0S**| Serve para guardar Programas simples feitos
+{% page-ref page="entrada-e-saida-de-informacoes.md" %}
 
+{% page-ref page="estruturas-de-controle.md" %}
 
-## Como compilar programas em C
+{% page-ref page="bases-numericas.md" %}
 
-Para criar um Executável: `gcc nomePrograma.c -o nomeExecutavel`
+{% page-ref page="usando-as-bases-numericas.md" %}
 
-Para Rodar um Executável: `./nomeExecutavel`
+{% page-ref page="vetores.md" %}
 
----
+{% page-ref page="manipulacao-de-bits.md" %}
 
-<center>
+{% page-ref page="modularizacao.md" %}
 
-<img src="1M4G3NS/c.gif">
+Vendo as páginas pelo Github:
 
-</center>
+| Nome da Página | Link |
+| :--- | :--- |
+| Compilando C em Linux | [Click](compilando-c-em-linux.md) |
+| Entrada e Saída de Informações | Click |
+| Estrutura de Controle | Click |
+| Bases Numéricas | [Click](bases-numericas.md) |
+| Usando Bases Numéricas | [Click](usando-as-bases-numericas.md) |
+| Vetores | [Click](vetores.md) |
+| Manipulação de Bits | [Click](manipulacao-de-bits.md) |
+| Modularização | [Click](modularizacao.md) |
+
