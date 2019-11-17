@@ -3,5 +3,5 @@
 # -----------------
 # COMPILANDO FUNCAO
 # -----------------
-
 gcc funcao.c -o funcao
+./funcao

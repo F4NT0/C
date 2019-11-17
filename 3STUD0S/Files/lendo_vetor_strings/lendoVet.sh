@@ -3,5 +3,5 @@
 # -------------------
 # COMPILANDO LENDOVET
 # -------------------
-
 gcc lendoVet.c -o lendoVet
+./lendoVet

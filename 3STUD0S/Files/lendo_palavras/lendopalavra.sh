@@ -3,5 +3,5 @@
 # --------------------------
 # COMPILANDO O LENDOPALAVRAS
 # --------------------------
-
 gcc lendopalavra.c -o lendopalavra
+./lendopalavra
