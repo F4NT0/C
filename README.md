@@ -33,8 +33,8 @@ A seguir se encontram todas as páginas de informação deste Repositório
 | Nome da Página | Link |
 | :--- | :--- |
 | Compilando C em Linux | [Click](compilando-c-em-linux.md) |
-| Entrada e Saída de Informações | Click |
-| Estrutura de Controle | Click |
+| Entrada e Saída de Informações | [Click](entrada-e-saida-de-informacoes.md) |
+| Estrutura de Controle | [Click](estrutura-de-controle.md) |
 | Bases Numéricas | [Click](bases-numericas.md) |
 | Usando Bases Numéricas | [Click](usando-as-bases-numericas.md) |
 | Vetores | [Click](vetores.md) |
