@@ -2,7 +2,7 @@
 
 ![](.gitbook/assets/640491.png)
 
-### Repositorio de Estudos em C
+## Repositorio de Estudos em C
 
 Este Repositório serve para poder organizar toda a informação de toda a matéria de **Software Básico.**
 
@@ -28,13 +28,13 @@ A seguir se encontram todas as páginas de informação deste Repositório
 
 {% page-ref page="modularizacao.md" %}
 
-#### Vendo as páginas pelo Github:
+### Vendo as páginas pelo Github:
 
 | Nome da Página | Link |
 | :--- | :--- |
 | Compilando C em Linux | [Click](compilando-c-em-linux.md) |
 | Entrada e Saída de Informações | [Click](entrada-e-saida-de-informacoes.md) |
-| Estrutura de Controle | [Click](estrutura-de-controle.md) |
+| Estrutura de Controle | [Click](https://github.com/F4NT0/C/tree/6289a6981e3c519de4f11b5557c56bc92737b929/estrutura-de-controle.md) |
 | Bases Numéricas | [Click](bases-numericas.md) |
 | Usando Bases Numéricas | [Click](usando-as-bases-numericas.md) |
 | Vetores | [Click](vetores.md) |

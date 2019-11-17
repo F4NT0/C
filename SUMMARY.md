@@ -9,4 +9,5 @@
 * [Vetores](vetores.md)
 * [Manipulação de Bits](manipulacao-de-bits.md)
 * [Modularização](modularizacao.md)
+* [Ponteiros](ponteiros.md)
 
