@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # --------------------
-# COMPILACAO DO SWITCH
+# COMPILACAO DO STRUCT
 # --------------------
 
-gcc switch.c -o switch
-./switch
-
+gcc structs.c -o structs
+./structs
