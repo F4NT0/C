@@ -1,5 +1,9 @@
 # Meus Estudos em C
 
+![](.gitbook/assets/640491.png)
+
+### Repositorio de Estudos em C
+
 Este Repositório serve para poder organizar toda a informação de toda a matéria de **Software Básico.**
 
 Todos os Arquivos encontrados aqui em **Markdown** \(.md\) são páginas ensinando do básico ao avançado de programação em C.
@@ -24,7 +28,7 @@ A seguir se encontram todas as páginas de informação deste Repositório
 
 {% page-ref page="modularizacao.md" %}
 
-Vendo as páginas pelo Github:
+#### Vendo as páginas pelo Github:
 
 | Nome da Página | Link |
 | :--- | :--- |
