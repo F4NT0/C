@@ -204,7 +204,7 @@ int result = 6;
 
 Diferente da passagem por valor, nesse caso ele não vai passar o valor de uma variável e sim a **referência** á aquela variável.
 
-Isto é um dos casos que diferencia a linguagem C de outras linguagens, nesse momento iremos discutir sobre **Ponteiros,** pelo menos de inicio.
+Isto é um dos casos que diferencia a linguagem C de outras linguagens, nesse momento iremos discutir sobre **Ponteiros,** pelo menos o inicio.
 
 As alterações feitas nos parâmetros da função afetam as variáveis que foram usadas, podendo alterar os valores delas. Nós não usamos as variáveis com o valor iniciado mas as variáveis que são ponteiros, onde fica armazenado o endereço de memória da variável de valores.
 
