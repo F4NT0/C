@@ -1,83 +1,59 @@
 # Vetores
 
-## VETORES\(ARRAYS\) EM C
+**Vetores** também conhecidos como **Arrays** é uma estrutura de dados mais simples e mais usadas na programação.
 
-* Um Vetor em C é armazenado como um **Ponteiro** para o primeiro Elemento
-* Os demais elementos são adicionados continuamente após adicionado o primeiro
+* **Vetor** é uma estrutura de dados homogênea que armazena vários valores do mesmo tipo e bem simples de iniciar, ele só precisa dos seguintes dados:
 
-### INICIALIZANDO UM VETOR
+  * o Tipo de dado que será armazenado dentro do vetor.
+  * nome do vetor
+  * o número máximo de valores que podem ser colocados
 
-* A inicialização do vetor é como abaixo:
+Estrutura inicial básica de um vetor:
 
 ```c
-tipo_dado vetor[tamanho];
+// vetor de 10 inteiros
+int vetor[10]; 
+// tipo nome[numero maximo];
 ```
 
-* Exemplo:
+Para salvar valores se deve adicionar os valores em cada **posição** do vetor.
+
+* **Posição** é o local dentro do vetor onde será armazenado um valor, onde podemos acessar para mexer nele.
+
+### Adicionando valores 
+
+Existem duas formas principais de adicionar valores.
+
+#### Tipo 1: Adicionando valores pré definidos
+
+Podemos colocar valores na hora que estamos criando o vetor, se os valores já forem pré-definidos para teste, como no exemplo abaixo:
 
 ```c
-int vetor[10]; // VETOR DE 10 POSIÇÕES
+// Vetor de números de 0 á 9
+int vetor[10] = {0,1,2,3,4,5,6,7,8,9};
 ```
 
-* o Vetor _vetor_ é um ponteiro para uma área de memória
-* neste vetor podemos armazenar 10 inteiros
-* O tamanho da área de memória é calculado como abaixo
+Dessa forma, podemos já ter os valores para usar caso necessário.
+
+#### Tipo 2: Adicionando valores com estruturas de controle
+
+Podemos usar estruturas de controle como o **For** e **While** para ir adicionando valores dentro de um vetor, assim os valores podem ser criados e adicionados.
+
+Exemplo de Vetor onde é preenchido de 0 á 9 por um **F**or:
 
 ```c
-posicoes * sizeof(tipo_dado)
-```
+// Vetor iniciado vazio de tamanho 10
+int vetor[10];
 
-* No nosso Exemplo:
-
-```c
-10 * sizeof(int); // tamanho total:
-```
-
-### I/O DO TAMANHO DO VETOR
-
-* Se deseja saber o tamanho do Vetor, deve usar o Modificador `%zu` no printf
-
-```c
-int vetor[] = {1,2,3,4,5,6,7,8,9,10};
-printf("Tamanho : %zu",vetor); // Tamanho : 40
-```
-
-### VETORES E REFERENCIA
-
-* Os vetores sempre são passados por **Referência** 
-* Podemos chamar o Vetor em uma Função externa como abaixo:
-
-```c
-void funcao(char* vetor){
-    ...
-}
-
-int main(){
-    char* vetor = "teste";
-    funcao(vetor);
+// Adicionando valores com um For
+for(int i = 0 ; i < sizeof(vetor) ; i++){
+    vetor[i] = i;
 }
 ```
 
-### LENDO VALORES DO VETOR
+ A Função **sizeof\(\)** serve para pegarmos o tamanho total do vetor e definirmos como o tamanho máximo do for, sem precisar ter que se lembrar qual era o tamanho básico definido do vetor.
 
-* Usamos a aritmética de ponteiros para poder ler os valores de um vetor
-* Podemos declarar um ponteiro para podermos mexer no vetor criado
+Dessa forma teremos um vetor igual como o do tipo 1 só que os valores sendo criados depois , onde podemos modificar como quisermos de forma mais fácil.
 
-```c
-char c[3] = {'a','b','c','d'};
-
-char* p = c; //criamos um ponteiro para o vetor, que ja é um ponteiro
-
-printf("%c\n", *p); //imprime primeiro valor do vetor
-```
-
-* A aritmética dos Ponteiros nos permite acessar outros elementos do vetor, porque cada adição no ponteiro é outra posição do vetor
-
-```c
-char c[3] = {'a','b','c'};
-
-printf("%c", *p); //primeira posição do vetor
-printf("%c", *(p+1)); //segunda posição do vetor
-printf("%c", *(p+2)); //terceira posição do vetor
-```
+**OBS:** existem inumeras formas de se colocar valores em um vetor mas essas duas formas são as mais utilizadas diariamente no desenvolvimento.
 
