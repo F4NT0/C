@@ -128,3 +128,130 @@ int main(){
 }
 ```
 
+### Passagem de Parâmetros
+
+* **Parâmetros** são as variáveis ou objetos que são necessários para uma função e podemos fazer várias coisas interessantes com elas.
+
+Os parâmetros são passados para uma função de acordo com a sua posição, ou seja:
+
+* Quando colocamos os parâmetros na construção da Função, chamamos eles de **Parâmetros Formais**.
+* Quando usamos variáveis como parâmetros na hora de usar a função, chamamos de **Parâmetros reais.**
+
+**Parâmetros Formais** aparecem no Protótipo e em toda a construção da Função, eles existem para que quando for usado a função se saiba onde cada variável vai ser utilizada.
+
+```c
+// Protótipo
+int soma(int a , int b); // a e b são Parâmetros Formais
+
+// Função
+int soma(int a, int b){
+    // os parâmetros a e b são usados dentro da função
+    // quando a função for usada , viram os valores das variaveis
+    return a + b;
+}
+```
+
+**Parâmetros reais** são os valores que serão pegos de variáveis ou adicionados na mão que serão usados na hora que o programa for rodado, alterando as posições que antes eram parâmetros formais.
+
+```c
+// Colocando os valores e vendo como roda
+
+// usando:
+int valor1 = 2;
+int valor2 = 4;
+int result = soma(valor1,valor2);
+
+// o que está fazendo
+
+ int soma(valor1, valor2){
+     return valor1 + valor2;
+ }
+```
+
+Agora com isso explicado vou explicar o que é Passagem de Parâmetros.
+
+#### Tipo 1: Passagem por valor
+
+Quando armazenamos valores dentro de variáveis podemos fazer inúmeras coisas com esses valores sem o medo de perder os dados guardados.
+
+na Passagem de Parâmetros por valor, chamamos as variáveis como parâmetro na hora de usar a função, onde dentro da função ele usa os valores previamente guardados sem fazer qualquer modificação dentro das variáveis usadas.
+
+Exemplo completo:
+
+```c
+// Função
+int soma(int a , int b){
+    return a + b;
+}
+
+// Variáveis
+int valor1 = 2;
+int valor2 = 4;
+
+// Chamando a função no método main
+int result = soma(valor1,valor2);
+
+// O que acontece dentro da função
+int soma(2,4){ // pega os valores dentro das variaveis
+    return 2 + 4;
+}
+
+// O que ele armazena
+int result = 6;
+```
+
+#### Tipo 2: Passagem por Referência
+
+Diferente da passagem por valor, nesse caso ele não vai passar o valor de uma variável e sim a **referência** á aquela variável.
+
+Isto é um dos casos que diferencia a linguagem C de outras linguagens, nesse momento iremos discutir sobre **Ponteiros,** pelo menos de inicio.
+
+As alterações feitas nos parâmetros da função afetam as variáveis que foram usadas, podendo alterar os valores delas. Nós não usamos as variáveis com o valor iniciado mas as variáveis que são ponteiros, onde fica armazenado o endereço de memória da variável de valores.
+
+Exemplo de uma variável de ponteiro
+
+```c
+// Variavel com o valor
+int valor = 10;
+
+// Variavel Ponteiro com o endereço de memória de valor
+int* ponteiro_valor = &valor;
+```
+
+* Usamos o simbolo **&** para pegar o endereço de memória de uma variável
+* Usamos o simbolo **\*** para duas coisas:
+  * quando colocado a direita de um tipo de dados\(ex: int\* \) estamos criando uma variável de ponteiros que vai **Receber** um endereço de memória.
+  * quando colocado a esquerda do nome de uma variável de ponteiros\(ex: \*var \) estamos acessando o valor do endereço de memória gravado nessa variável de ponteiros.
+
+Exemplo completo:
+
+* No caso abaixo, estamos pegando o endereço de memória de uma variável e alterando o valor dela.
+* É uma multiplicação com o valor de uma variável usando a referência da memória dela, ou seja, alterando o valor na memória da variável
+
+```c
+// Protótipo
+void mult(int* valor); // irá chamar uma var de ponteiros
+
+// Função
+void mult(int* valor){
+    *valor = *valor * *valor; // multiplica e armazena 
+}
+
+// Função main
+int main(){
+    // Variável que iremos mudar o valor
+    int valor = 10;
+    
+    // Ponteiro para a o endereço de memória de valor
+    int* ponteiro = &valor;
+    
+    // Fazendo o cálculo da função void
+    mult(ponteiro);
+    
+    //Verificando o valor
+    printf("Valor da variavel: %d \n", valor);
+}
+```
+
+* Por fim, todas as linguagens de alto nível sempre trabalham com **PASSAGEM DE VALOR** mas a Linguagem C possui também a opção de ser por **PASSAGEM POR REFERÊNCIA.**
+
