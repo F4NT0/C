@@ -1,51 +1,36 @@
 #include<stdio.h>
-#include<math.h>
 
-//Protótipos, se for construir as funções depois do Main
+// Protótipos
 
-//int adicao(int a,int b);
-//int subtracao(int a,int b);
+int soma(int a, int b);
+int sub(int a, int b);
 
+// Funções
 
-// Funções Matemáticos de Teste(devem ser feitas antes do Main)
-
-int adicao(int a, int b){
-    int valor;
-    valor = a + b;
-    return valor;
+int soma(int a , int b){
+    return a + b;
 }
 
-int subtracao(int a, int b){
-    int valor;
-    valor = a - b;
-    return valor;
+int sub(int a , int b){
+    return a - b;
 }
 
-//Função Main serve para rodar o programa em C
+// Função Main
 
 int main(){
-    printf("Teste de Funcoes em C\n");
-    printf("Aqui esta parte de codigo esta sendo lido da funcao main()\n");
-
-    //Entrada de Valores e armazenados em Variaveis
-    int a,b,soma,sub;
+    // Variáveis
+    int a;
+    int b;
     
-    printf("Digite o Valor 1: ");
-    scanf("%d", &a);
-    printf("Digite o Valor 2: ");
-    scanf("%d", &b);
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &a); // Entrada 1
     
-    //testando as funcoes de calculos matematicos
-
-    //int multi = 
-    //int divisao = 
-    soma = adicao(a,b);
-    sub  = subtracao(a,b);
-    //int resto = 
+    printf("Digite o segundo valor: ");
+    scanf("%d", &b); // Entrada 2
     
-
-    //Saidas dos valores de cada Função
-    printf("\n");
-    printf("Saida da Soma: %d\n",soma);
-    printf("Saida da Subtracao: %d\n",sub); 
+    int result_soma = soma(a,b); // soma
+    int result_sub = sub(a,b); // sub
+    
+    printf("Soma: %d \n", result_soma);
+    printf("Sub: %d \n", result_sub);
 }
