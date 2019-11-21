@@ -6,6 +6,7 @@
 * [Estruturas de Controle](estruturas-de-controle.md)
 * [Bases Numéricas](bases-numericas.md)
 * [Usando as Bases Numéricas](usando-as-bases-numericas.md)
+* [Funções](funcoes.md)
 * [Vetores](vetores.md)
 * [Manipulação de Bits](manipulacao-de-bits.md)
 * [Modularização](modularizacao.md)
