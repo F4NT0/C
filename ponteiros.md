@@ -75,5 +75,24 @@ int* ptr; //Não iniciado
 printf("Valor: %d", *ptr); // Segmentation Fault
 ```
 
+#### Ponteiros NULL
 
+* É uma boa prática armazenar o valor NULL em ponteiros não inicializados.
+* Podemos usar isso para podermos verificar se o ponteiro foi inicializado ou não.
+* NULL é simplesmente uma constante definida como ZERO.
+
+```c
+// Variável
+int a = 10;
+
+// Ponteiro
+int* ptr = NULL;
+
+// Teste
+if(ptr != NULL){
+    printf("Ponteiro Inicializado!!");
+}else{
+    printf("Ponteiros Inválidos!");
+}
+```
 
