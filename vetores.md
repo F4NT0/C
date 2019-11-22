@@ -75,7 +75,7 @@ Dessa forma podemos saber o tamanho total de memória utilizado, onde como mostr
 
 Se estiver trabalhando com o tipo **Char** está trabalhando com `1 byte` por posição, se for **Int** será `4 bytes` por posição.
 
-### Arrays são passados por Referência
+### Vetores  são passados por Referência
 
 Como explicado nas Funções, na passagem por referência iremos passar um ponteiro de vez de enviar um valor de uma variável, dessa forma iremos enviar o espaço de memória onde está localizado o vetor e não os valores em si.
 
@@ -96,11 +96,37 @@ int main(){
 }
 ```
 
-Dessa forma descobrimos que na verdade **Arrays são ponteiros para endereços de memórias dos valores armazenados nas posições especificas**.
+Dessa forma descobrimos que na verdade Vetores **são ponteiros para endereços de memórias dos valores armazenados nas posições especificas**.
 
 ### Aritmética de Ponteiros
 
-Irei explicar a aritmética de ponteiros aqui porque isso está conectado intrinsecamente lidado aos vetores.
+Irei explicar a aritmética de ponteiros aqui porque isso está conectado intrinsecamente  aos vetores.
 
- 
+Aritmética de ponteiros é um cálculo que se faz para se poder acessar outras  posições do vetor, onde pegamos a primeira posição do vetor e vamos fazendo cálculos aritméticos para acessar os outros endereços de memória.
+
+#### Como fazer
+
+* Primeiramente devemos criar um vetor e adicionar valores nele, irei usar como exemplo um vetor com valores pré-definidos.
+* Segundo criamos um Ponteiro do mesmo tipo do vetor e chamamos o Vetor nele
+* Terceiro pegamos a Primeira posição, onde só precisamos pegar o valor do ponteiro
+
+```c
+// Primeiro passo: Criando o vetor
+int vetor[10] = {0,1,2,3,4,5,6,7,8,9};
+
+// Segundo passo: Declarando um ponteiro
+int* ponteiro = vetor; //vetores são ponteiros também
+
+// Terceiro passo: Acessando posições
+printf("Primeiro Valor: %d ", *ponteiro); //acessando o valor
+printf("Primeiro Endereço: %p ", ponteiro); //end. memória
+
+// Acessando todas as outras posições
+printf("Pos 0: %d ", *ponteiro);
+printf("Pos 1: %d ", *(ponteiro+1));
+printf("Pos 2: %d ", *(ponteiro+2));
+...
+```
+
+Isso é Aritmética de Ponteiros, vamos somando o valor da posição e pegando o valor que se encontra lá dentro ou o endereço de memória dele.
 
