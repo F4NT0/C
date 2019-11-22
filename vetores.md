@@ -130,3 +130,60 @@ printf("Pos 2: %d ", *(ponteiro+2));
 
 Isso é Aritmética de Ponteiros, vamos somando o valor da posição e pegando o valor que se encontra lá dentro ou o endereço de memória dele.
 
+#### Copiando o vetor
+
+* Para copiar um vetor ao outro devemos usar um for para pegar todos os valores do vetor antigo.
+* Para não modificar o vetor original devemos criar um novo vetor com novos endereços de memória.
+
+Exemplo de Copia de um Vetor:
+
+```c
+//Vetor Original
+int vetor[10] = {0,1,2,3,4,5,6,7,8,9};
+
+// Novo vetor do mesmo tamanho
+int novo_vetor[10];
+
+// Adicionando os valores
+for(int i = 0 ; i < 10 ; i++){novo_vetor[i] = vetor[i];}
+```
+
+#### Alterando valores do vetor
+
+* Podemos alterar os valores de um vetor com ponteiros mais fácil, assim podemos mexer com os valores dos endereços de memória.
+
+```c
+// Vetor
+int vetor[10] = {0,1,2,3,4,5,6,7,8,9};
+
+// Criando um ponteiro de memória
+int* ponteiro = vetor;
+
+// Alterando os valores do vetor
+for(int i = 0 ; i < 10 ; i++){
+    *(ponteiro+i) = *(ponteiro+i) + 1;
+}
+```
+
+#### Lendo as Posições
+
+* Uma coisa que se tem que tomar cuidado é na leitura quando está querendo pegar os valores das posições.
+
+```c
+// Vetor
+int vetor[3] = {4,9,12};
+
+// Ponteiro
+int* ptr = vetor;
+
+// Pegando o primeiro valor e somando 1
+for(int i = 0 ; i < 3 ; i++){
+    printf("Valores: %d ", (*ptr)++); // Saida: 4 5 6
+}
+
+// Pegando os valores das posições
+for(int i = 0 ; i < 3 ; i++){
+    printf("Valores: %d ", *ptr++); // Saida: 4 9 12
+}
+```
+
