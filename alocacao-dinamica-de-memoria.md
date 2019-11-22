@@ -79,3 +79,17 @@ int* ptr = calloc(10, sizeof *ptr);
 int* nptr = realloc(ptr, 30);
 ```
 
+#### Liberando Memória:
+
+* Para liberar memória alocada dinâmicamente, precisamos chamar a função `free` para podermos liberar a memória para utilizar em outro lugar.
+* Precisamos passar o ponteiro que usamos para utilizar a memória alocada.
+* atenção, em C não existe **Garbage Collection** por isso precisamos sempre no final liberando a memória que não estamos mais usando dinâmicamente.
+
+```c
+// Ponteiro com memória alocada
+int* ptr = malloc(10 * sizeof *ptr);
+
+// Liberando a memória
+free(ptr);
+```
+
