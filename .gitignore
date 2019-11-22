@@ -17,3 +17,5 @@ test_array
 array_ptr
 ponteiro
 alocacao
+matrix
+aloc_matrix
