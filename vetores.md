@@ -10,11 +10,13 @@
 
 Estrutura inicial básica de um vetor:
 
+{% code title="" %}
 ```c
 // vetor de 10 inteiros
 int vetor[10]; 
 // tipo nome[numero maximo];
 ```
+{% endcode %}
 
 Para salvar valores se deve adicionar os valores em cada **posição** do vetor.
 
@@ -46,14 +48,59 @@ Exemplo de Vetor onde é preenchido de 0 á 9 por um **F**or:
 int vetor[10];
 
 // Adicionando valores com um For
-for(int i = 0 ; i < sizeof(vetor) ; i++){
+for(int i = 0 ; i < 10 ; i++){
     vetor[i] = i;
 }
 ```
 
- A Função **sizeof\(\)** serve para pegarmos o tamanho total do vetor e definirmos como o tamanho máximo do for, sem precisar ter que se lembrar qual era o tamanho básico definido do vetor.
-
 Dessa forma teremos um vetor igual como o do tipo 1 só que os valores sendo criados depois , onde podemos modificar como quisermos de forma mais fácil.
 
-**OBS:** existem inumeras formas de se colocar valores em um vetor mas essas duas formas são as mais utilizadas diariamente no desenvolvimento.
+**OBS:** existem inúmeras formas de se colocar valores em um vetor mas essas duas formas são as mais utilizadas diariamente no desenvolvimento.
+
+### Ponteiros e Vetores
+
+Em C, um vetor é armazenado como um ponteiro para o primeiro elemento do vetor \(na posição 0 \) e os demais elementos são armazenados nas memórias seguintes á primeira memória separada pela posição inicial.
+
+Para definirmos o tamanho da memória que foi usado devemos saber o tipo de elemento que vai ser guardado, assim iremos verificar o tamanho do tipo e multiplicar pelo número de elementos definidos no vetor, como por exemplo:
+
+```c
+// Vetor Criado
+int vetor[10]; // Possui 10 posições do tipo int(4 bytes)
+
+// Descobrindo o espaço de memória total
+int espaco_memoria = sizeof(int)*10; // 40 bytes
+```
+
+Dessa forma podemos saber o tamanho total de memória utilizado, onde como mostrado **pegamos o tamanho do tipo inteiro e multiplicamos pelo numero de posições do vetor.**
+
+Se estiver trabalhando com o tipo **Char** está trabalhando com `1 byte` por posição, se for **Int** será `4 bytes` por posição.
+
+### Arrays são passados por Referência
+
+Como explicado nas Funções, na passagem por referência iremos passar um ponteiro de vez de enviar um valor de uma variável, dessa forma iremos enviar o espaço de memória onde está localizado o vetor e não os valores em si.
+
+Embaixo um exemplo de Função que modifica os valores de um vetor:
+
+```c
+// Função multiplicador de valores
+void mult(int* vetor, int tamanho){
+    for(int i = 0 ; i < tamanho ; i++){
+        vetor[i] = vetor[i] * vetor[i];
+    }
+}
+
+// Função Main
+int main(){
+    int vetor[] = {1,2,3,4,5,6,7,8,9,10};
+    mult(vetor,10);
+}
+```
+
+Dessa forma descobrimos que na verdade **Arrays são ponteiros para endereços de memórias dos valores armazenados nas posições especificas**.
+
+### Aritmética de Ponteiros
+
+Irei explicar a aritmética de ponteiros aqui porque isso está conectado intrinsecamente lidado aos vetores.
+
+ 
 
