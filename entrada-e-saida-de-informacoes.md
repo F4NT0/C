@@ -5,7 +5,7 @@
 ## Entrada e Saída de Informações
 
 * Assim como todas as linguagens de programação, C possui também seu sistema de entrada e saída de informações para testes ou utilização do usuário.
-* É um pouco complexo diferente dos outros porque precisa dizer exatamente qual o tipo de informação que está entrando e saíndo do programa.
+* É um pouco complexo diferente dos outros porque precisa dizer exatamente qual o tipo de informação que está entrando e saindo do programa.
 
 ### Entrada de Informações no programa
 
@@ -39,7 +39,7 @@ printf("Saida do Valor: %d", numero);
 //Saida do Valor : 1
 ```
 
-* Portanto dessa forma ele vai pegar o valor armazenado n variável _numero_ e colocar na posição onde o modificador foi chamado, então quanto mais variaveis e mais modificadores colocados, diferente vai ficando a saída
+* Portanto dessa forma ele vai pegar o valor armazenado n variável _numero_ e colocar na posição onde o modificador foi chamado, então quanto mais variáveis e mais modificadores colocados, diferente vai ficando a saída
 
 ```c
 //Variáveis
@@ -51,7 +51,7 @@ printf("Valores Armazenados: %d %d %d", valor1 , valor2 , valor3);
 //Valores Armazenados: 1 2 3
 ```
 
-* Quando trabalhamos com um tipo _float_ \(valores reais como 2,5\), podemos definir como vai ser a  saída dele, onde normalmente são 7 digitos além da virgula apresentados normalmente, mas podemos definir a saida da seguinte forma:
+* Quando trabalhamos com um tipo _float_ \(valores reais como 2,5\), podemos definir como vai ser a  saída dele, onde normalmente são 7 dígitos além da virgula apresentados normalmente, mas podemos definir a saída da seguinte forma:
 
 ```c
 //Variavel

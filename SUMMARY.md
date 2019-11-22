@@ -11,4 +11,5 @@
 * [Manipulação de Bits](manipulacao-de-bits.md)
 * [Modularização](modularizacao.md)
 * [Ponteiros](ponteiros.md)
+* [Alocação Dinâmica de Memória](alocacao-dinamica-de-memoria.md)
 
